@@ -1,12 +1,12 @@
-iBTC Core integration/staging tree
+WAZ Core integration/staging tree
 =====================================
 
-http://www.iBTC.network
+http://www.getwazzle.com
 
-What is iBTC?
+What is WAZ?
 ----------------
 
-iBTC aims to be a more decentralized version of Bitcoin. This is accomplished 
+WAZ aims to be a more decentralized version of Bitcoin. This is accomplished 
 using Satoshi's Missing Link - VBR Decentralization Algorithm. 
 The Variable Block Reward (VBR) feature is the engine behind promoting more 
 decentralization.
@@ -24,15 +24,15 @@ the Bitcoin Core software, see https://bitcoincore.org/en/download/, or read the
 License
 -------
 
-iBTC Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+WAZ Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/NullFunctor/iBTC/tags) are created
-regularly to indicate new official, stable release versions of iBTC Core.
+completely stable. [Tags](https://github.com/WizzleCoin/WAZ/tags) are created
+regularly to indicate new official, stable release versions of WAZ Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).

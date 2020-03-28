@@ -122,7 +122,7 @@ bool CheckProofOfWork(int height, uint256 hash, CBlock& block, const Consensus::
 
     uint64_t miners_specified_subsidy = block.vtx[0]->vout[0].nValue;
 
-    // account for transaction fees at most (5 iBTC)
+    // account for transaction fees at most (5 WAZ)
     uint64_t max_allowed_output = maxAllowedSubsidy + 5;
     if (miners_specified_subsidy <= max_allowed_output) {
         // miner's specified block reward is ok, not too big.

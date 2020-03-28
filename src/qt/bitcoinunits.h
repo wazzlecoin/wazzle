@@ -56,9 +56,9 @@ public:
      */
     enum Unit
     {
-        iBTC,
-        miBTC,
-        uiBTC,
+        WAZ,
+        mWAZ,
+        uWAZ,
         SAT
     };
 
