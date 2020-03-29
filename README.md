@@ -6,11 +6,6 @@ http://www.getwazzle.com
 What is WAZ?
 ----------------
 
-WAZ aims to be a more decentralized version of Wazzle. This is accomplished 
-using Satoshi's Missing Link - VBR Decentralization Algorithm. 
-The Variable Block Reward (VBR) feature is the engine behind promoting more 
-decentralization.
-
 Wazzle is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Wazzle uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
