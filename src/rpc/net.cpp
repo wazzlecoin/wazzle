@@ -230,8 +230,8 @@ static UniValue addnode(const JSONRPCRequest& request)
                 },
                 RPCResults{},
                 RPCExamples{
-                    HelpExampleCli("addnode", "\"192.168.0.6:7333\" \"onetry\"")
-            + HelpExampleRpc("addnode", "\"192.168.0.6:7333\", \"onetry\"")
+                    HelpExampleCli("addnode", "\"192.168.0.6:7222\" \"onetry\"")
+            + HelpExampleRpc("addnode", "\"192.168.0.6:7222\", \"onetry\"")
                 },
             }.ToString());
 
@@ -273,9 +273,9 @@ static UniValue disconnectnode(const JSONRPCRequest& request)
                 },
                 RPCResults{},
                 RPCExamples{
-                    HelpExampleCli("disconnectnode", "\"192.168.0.6:7333\"")
+                    HelpExampleCli("disconnectnode", "\"192.168.0.6:7222\"")
             + HelpExampleCli("disconnectnode", "\"\" 1")
-            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:7333\"")
+            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:7222\"")
             + HelpExampleRpc("disconnectnode", "\"\", 1")
                 },
             }.Check(request);
@@ -320,7 +320,7 @@ static UniValue getaddednodeinfo(const JSONRPCRequest& request)
             "    \"connected\" : true|false,          (boolean) If connected\n"
             "    \"addresses\" : [                    (list of objects) Only when connected = true\n"
             "       {\n"
-            "         \"address\" : \"192.168.0.201:7333\",  (string) The wazzle server IP and port we're connected to\n"
+            "         \"address\" : \"192.168.0.201:7222\",  (string) The wazzle server IP and port we're connected to\n"
             "         \"connected\" : \"outbound\"           (string) connection, inbound or outbound\n"
             "       }\n"
             "     ]\n"
