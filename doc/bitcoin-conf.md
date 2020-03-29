@@ -1,6 +1,6 @@
-# `bitcoin.conf` Configuration File
+# `wazzle.conf` Configuration File
 
-The configuration file is used by `bitcoind`, `bitcoin-qt` and `bitcoin-cli`.
+The configuration file is used by `wazzled`, `wazzle-qt` and `wazzle-cli`.
 
 All command-line options (except for `-?`, `-help`, `-version` and `-conf`) may be specified in a configuration file, and all configuration file options (except for `includeconf`) may also be specified on the command line. Command-line options override values set in the configuration file and configuration file options override values set in the GUI.
 
@@ -47,16 +47,16 @@ rpcport=4000
 
 ## Configuration File Path
 
-The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `bitcoin.conf` and it is located in the Bitcoin data directory, but both the Bitcoin data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
+The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `wazzle.conf` and it is located in the Wazzle data directory, but both the Wazzle data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
 
-The `includeconf=<file>` option in the `bitcoin.conf` file can be used to include additional configuration files.
+The `includeconf=<file>` option in the `wazzle.conf` file can be used to include additional configuration files.
 
 ### Default configuration file locations
 
 Operating System | Data Directory | Example Path
 -- | -- | --
-Windows | `%APPDATA%\Bitcoin\` | `C:\Users\username\AppData\Roaming\Bitcoin\bitcoin.conf`
-Linux | `$HOME/.bitcoin/` | `/home/username/.bitcoin/bitcoin.conf`
-macOS | `$HOME/Library/Application Support/Bitcoin/` | `/Users/username/Library/Application Support/Bitcoin/bitcoin.conf`
+Windows | `%APPDATA%\Wazzle\` | `C:\Users\username\AppData\Roaming\Wazzle\wazzle.conf`
+Linux | `$HOME/.wazzle/` | `/home/username/.wazzle/wazzle.conf`
+macOS | `$HOME/Library/Application Support/Wazzle/` | `/Users/username/Library/Application Support/Wazzle/wazzle.conf`
 
-You can find an example bitcoin.conf file in [share/examples/bitcoin.conf](../share/examples/bitcoin.conf).
+You can find an example wazzle.conf file in [share/examples/wazzle.conf](../share/examples/wazzle.conf).

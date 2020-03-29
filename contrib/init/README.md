@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: bitcoind.service
-Upstart: bitcoind.conf
-OpenRC:  bitcoind.openrc
-         bitcoind.openrcconf
-CentOS:  bitcoind.init
-macOS:   org.bitcoin.bitcoind.plist
+SystemD: wazzled.service
+Upstart: wazzled.conf
+OpenRC:  wazzled.openrc
+         wazzled.openrcconf
+CentOS:  wazzled.init
+macOS:   org.wazzle.wazzled.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

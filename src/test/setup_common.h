@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2019 The Bitcoin Core developers
+// Copyright (c) 2015-2019 The Wazzle Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_SETUP_COMMON_H
-#define BITCOIN_TEST_SETUP_COMMON_H
+#ifndef WAZZLE_TEST_SETUP_COMMON_H
+#define WAZZLE_TEST_SETUP_COMMON_H
 
 #include <chainparamsbase.h>
 #include <fs.h>

@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/src/qt/bitcoin-qt",
+            "program": "${workspaceFolder}/src/qt/wazzle-qt",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

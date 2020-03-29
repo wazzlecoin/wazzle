@@ -145,10 +145,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>WazzleGUI</name>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Bitcoin មួយ</translation>
+        <source>Send coins to a Wazzle address</source>
+        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Wazzle មួយ</translation>
     </message>
     </context>
 <context>
@@ -313,6 +313,6 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>wazzle-core</name>
     </context>
 </TS>

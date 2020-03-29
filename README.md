@@ -6,20 +6,20 @@ http://www.getwazzle.com
 What is WAZ?
 ----------------
 
-WAZ aims to be a more decentralized version of Bitcoin. This is accomplished 
+WAZ aims to be a more decentralized version of Wazzle. This is accomplished 
 using Satoshi's Missing Link - VBR Decentralization Algorithm. 
 The Variable Block Reward (VBR) feature is the engine behind promoting more 
 decentralization.
 
-Bitcoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
+Wazzle is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Wazzle uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Bitcoin Core is the name of open source
+out collectively by the network. Wazzle Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bitcoin Core software, see https://bitcoincore.org/en/download/, or read the
-[original whitepaper](https://bitcoincore.org/bitcoin.pdf).
+the Wazzle Core software, see https://wazzlecore.org/en/download/, or read the
+[original whitepaper](https://wazzlecore.org/wazzle.pdf).
 
 License
 -------
@@ -68,7 +68,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Bitcoin Core's Transifex page](https://www.transifex.com/bitcoin/bitcoin/).
+[Wazzle Core's Transifex page](https://www.transifex.com/wazzle/wazzle/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
@@ -76,4 +76,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/bitcoin-translators).
+Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/wazzle-translators).

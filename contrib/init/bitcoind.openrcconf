@@ -1,33 +1,33 @@
-# /etc/conf.d/bitcoind: config file for /etc/init.d/bitcoind
+# /etc/conf.d/wazzled: config file for /etc/init.d/wazzled
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/bitcoin/bitcoin.conf"
+#WAZZLED_CONFIGFILE="/etc/wazzle/wazzle.conf"
 
-# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/bitcoind"
+# What directory to write pidfile to?  (created and owned by $WAZZLED_USER)
+#WAZZLED_PIDDIR="/var/run/wazzled"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitcoind.pid"
+#WAZZLED_PIDFILE="${WAZZLED_PIDDIR}/wazzled.pid"
 
-# Where to write bitcoind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/bitcoind"
+# Where to write wazzled data (be mindful that the blockchain is large)
+#WAZZLED_DATADIR="/var/lib/wazzled"
 
-# User and group to own bitcoind process
-#BITCOIND_USER="bitcoin"
-#BITCOIND_GROUP="bitcoin"
+# User and group to own wazzled process
+#WAZZLED_USER="wazzle"
+#WAZZLED_GROUP="wazzle"
 
-# Path to bitcoind executable
-#BITCOIND_BIN="/usr/bin/bitcoind"
+# Path to wazzled executable
+#WAZZLED_BIN="/usr/bin/wazzled"
 
-# Nice value to run bitcoind under
-#BITCOIND_NICE=0
+# Nice value to run wazzled under
+#WAZZLED_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-#BITCOIND_OPTS=""
+#WAZZLED_OPTS=""
 
-# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# The timeout in seconds OpenRC will wait for wazzled to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-BITCOIND_SIGTERM_TIMEOUT=60
+WAZZLED_SIGTERM_TIMEOUT=60

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2019 The Bitcoin Core developers
+# Copyright (c) 2019 The Wazzle Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,4 +10,4 @@ export HOST=x86_64-unknown-linux-gnu
 export PACKAGES="python3-zmq"
 export DEP_OPTS="NO_WALLET=1"
 export GOAL="install"
-export BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
+export WAZZLE_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"

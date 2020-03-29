@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2018 The Wazzle Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ARITH_UINT256_H
-#define BITCOIN_ARITH_UINT256_H
+#ifndef WAZZLE_ARITH_UINT256_H
+#define WAZZLE_ARITH_UINT256_H
 
 #include <assert.h>
 #include <cstring>
@@ -271,7 +271,7 @@ public:
      * Thus 0x1234560000 is compact (0x05123456)
      * and  0xc0de000000 is compact (0x0600c0de)
      *
-     * Bitcoin only uses this "compact" format for encoding difficulty
+     * Wazzle only uses this "compact" format for encoding difficulty
      * targets, which are unsigned 256bit quantities.  Thus, all the
      * complexities of the sign bit and using base 256 are probably an
      * implementation accident.
@@ -288,4 +288,4 @@ arith_uint256 UintToArith256(const uint256 &);
 
 uint32_t get_32bit_word_from_uint256(const uint256 &a);
 
-#endif // BITCOIN_ARITH_UINT256_H
+#endif // WAZZLE_ARITH_UINT256_H

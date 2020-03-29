@@ -120,7 +120,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>WazzleGUI</name>
     <message>
         <source>Error</source>
         <translation>نقص</translation>
@@ -344,7 +344,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>wazzle-core</name>
     <message>
         <source>Insufficient funds</source>
         <translation>ناکافی فنڈز</translation>
