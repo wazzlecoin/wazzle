@@ -1,6 +1,6 @@
 Wazzle Core version 0.16.2 is now available from:
 
-  <https://wazzlecore.org/bin/wazzle-core-0.16.2/>
+  <https://getwazzle.com/bin/wazzle-core-0.16.2/>
 
 This is a new minor version release, with various bugfixes
 as well as updated translations.
@@ -11,7 +11,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://wazzlecore.org/en/list/announcements/join/>
+  <https://getwazzle.com/en/list/announcements/join/>
 
 How to Upgrade
 ==============

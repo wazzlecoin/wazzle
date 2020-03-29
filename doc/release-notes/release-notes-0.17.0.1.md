@@ -1,6 +1,6 @@
 Wazzle Core version 0.17.0.1 is now available from:
 
-  <https://wazzlecore.org/bin/wazzle-core-0.17.0.1/>
+  <https://getwazzle.com/bin/wazzle-core-0.17.0.1/>
 
 This release provides a minor bug fix for 0.17.0.
 
@@ -10,7 +10,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://wazzlecore.org/en/list/announcements/join/>
+  <https://getwazzle.com/en/list/announcements/join/>
 
 Notable changes
 ===============

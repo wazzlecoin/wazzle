@@ -18,8 +18,8 @@ out collectively by the network. Wazzle Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Wazzle Core software, see https://wazzlecore.org/en/download/, or read the
-[original whitepaper](https://wazzlecore.org/wazzle.pdf).
+the Wazzle Core software, see https://getwazzle.com/en/download/, or read the
+[original whitepaper](https://getwazzle.com/wazzle.pdf).
 
 License
 -------

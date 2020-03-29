@@ -116,7 +116,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://wazzlecore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://getwazzle.com/cfields/osslsigncode-Backports-to-1.7.1.patch
     echo 'a8c4e9cafba922f89de0df1f2152e7be286aba73f78505169bc351a7938dd911 inputs/osslsigncode-Backports-to-1.7.1.patch' | sha256sum -c
     wget -P inputs https://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     echo 'f9a8cdb38b9c309326764ebc937cba1523a3a751a7ab05df3ecc99d18ae466c9 inputs/osslsigncode-1.7.1.tar.gz' | sha256sum -c
@@ -321,12 +321,12 @@ wazzle.org (see below for wazzle.org update instructions).
 
 - Update other repositories and websites for new version
 
-  - wazzlecore.org blog post
+  - getwazzle.com blog post
 
-  - wazzlecore.org maintained versions update:
-    [table](https://github.com/wazzle-core/wazzlecore.org/commits/master/_includes/posts/maintenance-table.md)
+  - getwazzle.com maintained versions update:
+    [table](https://github.com/wazzle-core/getwazzle.com/commits/master/_includes/posts/maintenance-table.md)
 
-  - wazzlecore.org RPC documentation update
+  - getwazzle.com RPC documentation update
 
   - Update packaging repo
 
@@ -362,7 +362,7 @@ wazzle.org (see below for wazzle.org update instructions).
 
   - wazzle-dev and wazzle-core-dev mailing list
 
-  - Wazzle Core announcements list https://wazzlecore.org/en/list/announcements/join/
+  - Wazzle Core announcements list https://getwazzle.com/en/list/announcements/join/
 
   - Update title of #wazzle on Freenode IRC
 
