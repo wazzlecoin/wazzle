@@ -55,8 +55,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {  
-    const char* pszTimestamp = "Here is WAZ - 16/Mar/2020";
-    const CScript genesisOutputScript = CScript() << ParseHex("aa21a9edc37a633ad142562af83957fc8c7dcb2a0a4a1d6f3146f4c242fd044e0a617db8") << OP_CHECKSIG;
+    const char* pszTimestamp = "not yet";
+    const CScript genesisOutputScript = CScript() << ParseHex("notyet") << OP_CHECKSIG;
    return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -106,10 +106,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
-        pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb3;
-        pchMessageStart[3] = 0xd9;
+        pchMessageStart[0] = 0xe9;
+        pchMessageStart[1] = 0xc2;
+        pchMessageStart[2] = 0xb1;
+        pchMessageStart[3] = 0xa2;
         nDefaultPort = 7222;
         nPruneAfterHeight = 100000;
 
@@ -151,8 +151,8 @@ public:
         std::cout << "genesis.nTime: " << nTime << std::endl;
 
                                                          
-        assert(consensus.hashGenesisBlock == uint256S("0000000033cb83efac961393f5ee81c4da54442fbc243f3df2f5b5d5a648b90e"));
-        assert(genesis.hashMerkleRoot == uint256S("7950a6fb3f7dfa13b024b5a5e3ee7688042aa31b5ed354ff3190b25c1775646e"));
+        assert(consensus.hashGenesisBlock == uint256S("not yet"));
+        assert(genesis.hashMerkleRoot == uint256S("notyet"));
 
 
         // Note that of those which support the service bits prefix, most only support a subset of
@@ -190,10 +190,7 @@ public:
 
         checkpointData = {
             {
-                {0,     uint256S("0000000033cb83efac961393f5ee81c4da54442fbc243f3df2f5b5d5a648b90e")},
-                {140,   uint256S("0000000000a99938169914d8152c2c44df04bbefc620c793befee5ac2832d50e")},
-                {190,   uint256S("0000000000006535b1a4b242cca4f765e9ad27fb5be8fdd8f44d4a8ba0764d4a")},
-                {295,   uint256S("00000000000065a0b5e6ddb1cf9c9dfd17cba5f9de46281f4c2c2d57b9218d7d")},
+                {0,     uint256S("notyet")},
             }
         };
 
@@ -242,10 +239,10 @@ public:
         consensus.defaultAssumeValid = uint256S("00009a004b86c066b21aaffe2325a2bf5cb80ccf572c137cb24086cc83ca0542");
 
 
-        pchMessageStart[0] = 0xf5;
-        pchMessageStart[1] = 0xb4;
-        pchMessageStart[2] = 0xf3;
-        pchMessageStart[3] = 0xa2;
+        pchMessageStart[0] = 0xb3;
+        pchMessageStart[1] = 0xe0;
+        pchMessageStart[2] = 0x87;
+        pchMessageStart[3] = 0xe3;
         nDefaultPort = 17222;
         nPruneAfterHeight = 100000;
 		m_assumed_blockchain_size = 30;
@@ -289,8 +286,8 @@ public:
         std::cout << "genesis.nTime: " << nTime << std::endl;
 
                                                          
-        assert(consensus.hashGenesisBlock == uint256S("0000000033cb83efac961393f5ee81c4da54442fbc243f3df2f5b5d5a648b90e"));
-        assert(genesis.hashMerkleRoot == uint256S("7950a6fb3f7dfa13b024b5a5e3ee7688042aa31b5ed354ff3190b25c1775646e"));
+        assert(consensus.hashGenesisBlock == uint256S("notyet"));
+        assert(genesis.hashMerkleRoot == uint256S("notyet"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -365,10 +362,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
+        pchMessageStart[0] = 0xe3;
+        pchMessageStart[1] = 0xdb;
+        pchMessageStart[2] = 0xe9;
+        pchMessageStart[3] = 0xf8;
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 0;
