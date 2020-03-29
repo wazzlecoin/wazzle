@@ -1056,7 +1056,7 @@ Thanks to everyone who directly contributed to this release:
 - nicolas.dorier
 - Nils Loewen
 - nkostoulas
-- WizzleCoin
+- WazzleCoin
 - orient
 - Patrick Strateman
 - Peter Bushnell
