@@ -1,7 +1,7 @@
 WAZ Core integration/staging tree
 =====================================
 
-http://www.getwazzle.com
+http://www.getwazzle.com ( Soon )
 
 What is WAZ?
 ----------------
@@ -14,7 +14,7 @@ software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
 the Wazzle Core software, see https://getwazzle.com/en/download/, or read the
-[original whitepaper](https://getwazzle.com/wazzle.pdf).
+[original whitepaper](https://getwazzle.com/wazzle.pdf). ( soon )
 
 License
 -------
