@@ -55,8 +55,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {  
-    const char* pszTimestamp = "The Times 05/April/2020 Corona Kill my friend";
-    const CScript genesisOutputScript = CScript() << ParseHex("4104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac
+    const char* pszTimestamp = "The Times 05/April/2020 Lets work and fucking together";
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
 ") << OP_CHECKSIG;
    return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -127,11 +127,11 @@ public:
         // Using following formula target can be obtained from any block. For example if a target packed in a block appears as 0x1b0404cb its hexadecimal version will look as following:
         // 0x0404cb * 2**(8*(0x1b - 3)) = 0x00000000000404CB000000000000000000000000000000000000000000000000
         bool proof_of_work_valid = false;
-        for (nTime=1586075504; ;nTime++)
+        for (nTime=1586088993; ;nTime++)
         {
             genesis = CreateGenesisBlock(nTime, nNonce, 0x1d00ffff, 1, 50 * COIN);
 
-            for (genesis.nNonce = 2015000626; genesis.nNonce <= 0xfffffff0;genesis.nNonce++)
+            for (genesis.nNonce = 3487916155; genesis.nNonce <= 0xfffffff0;genesis.nNonce++)
             {
                 proof_of_work_valid = CheckProofOfWork(genesis.GetHash(), genesis.nBits, consensus);
                 if (proof_of_work_valid) {
@@ -152,8 +152,8 @@ public:
         std::cout << "genesis.nTime: " << nTime << std::endl;
 
                                                          
-        assert(consensus.hashGenesisBlock == uint256S("0000000005cd44e06799b38ee8b3e5419f3e363d6e64d9659af658931555db3a"));
-        assert(genesis.hashMerkleRoot == uint256S("f76feaba19901283bc0bcceae3a088c42edde0597d3b53e18eadcc4031888d27"));
+        assert(consensus.hashGenesisBlock == uint256S("000000006126a40980696a64402d96a9ba32038bdd37d8d3100d4fcacbd959fd"));
+        assert(genesis.hashMerkleRoot == uint256S("3e06d4e945990e293b9934e317d1127998bf51351f36bb83d55cbaefbec68897"));
 
 
         // Note that of those which support the service bits prefix, most only support a subset of
