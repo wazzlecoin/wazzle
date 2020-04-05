@@ -55,8 +55,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {  
-    const char* pszTimestamp = "not yet";
-    const CScript genesisOutputScript = CScript() << ParseHex("notyet") << OP_CHECKSIG;
+    const char* pszTimestamp = "The Times 05/April/2020 Corona Kill my friend";
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
    return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -70,9 +70,9 @@ public:
     CMainParams() {
         strNetworkID = "main"; 
         consensus.nSubsidyHalvingInterval = 210000; // #blocks before halving occurs. every 4 years
-        consensus.BIP16Exception = uint256S(not yet);
+        consensus.BIP16Exception = uint256S();
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S(not yet);
+        consensus.BIP34Hash = uint256S();
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
 
@@ -95,7 +95,7 @@ public:
 
         // nMinimumChainWork is a value that is updated at every release. It is retrieved from the Debug command
         //            getblockchaininfo 
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000007552821950a8f0");
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000100010001");
 
                                                 
         // By default assume that the signatures in ancestors of this block are valid.
@@ -152,7 +152,7 @@ public:
 
                                                          
         assert(consensus.hashGenesisBlock == uint256S("not yet"));
-        assert(genesis.hashMerkleRoot == uint256S("notyet"));
+        assert(genesis.hashMerkleRoot == uint256S("9f293537ec406ec7916c0524a424cda4cb351e2bc5945116b4007bea7e7dca02"));
 
 
         // Note that of those which support the service bits prefix, most only support a subset of
