@@ -197,8 +197,8 @@ public:
 
         chainTxData = ChainTxData{
             // type     getchaintxstats    in debug console
-            /* nTime    */ 1584411581,
-            /* nTxCount */ 200,
+            /* nTime    */ 1586088993,
+            /* nTxCount */ 0,
             /* dTxRate  */ 0.03986500738240877
         };
 
@@ -213,9 +213,9 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 210000; // #blocks before halving occurs. every 4 years
-        consensus.BIP16Exception = uint256S("notyet");
+        consensus.BIP16Exception = uint256S();
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("notyet");
+        consensus.BIP34Hash = uint256S();
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
 
@@ -249,8 +249,8 @@ public:
 		m_assumed_blockchain_size = 30;
 		m_assumed_chain_state_size = 2;
 
-        uint32_t nTime=1584397119;
-        uint32_t nNonce=644556601;
+        uint32_t nTime=1586115773;
+        uint32_t nNonce=2732117802;
 		
 		m_assumed_blockchain_size = 240;
 		m_assumed_chain_state_size = 3;
@@ -262,11 +262,11 @@ public:
         // Using following formula target can be obtained from any block. For example if a target packed in a block appears as 0x1b0404cb its hexadecimal version will look as following:
         // 0x0404cb * 2**(8*(0x1b - 3)) = 0x00000000000404CB000000000000000000000000000000000000000000000000
         bool proof_of_work_valid = false;
-        for (nTime=1584397119; ;nTime++)
+        for (nTime=1586115773; ;nTime++)
         {
             genesis = CreateGenesisBlock(nTime, nNonce, 0x1d00ffff, 1, 50 * COIN);
 
-            for (genesis.nNonce = 644556601; genesis.nNonce <= 0xfffffff0;genesis.nNonce++)
+            for (genesis.nNonce = 2732117802; genesis.nNonce <= 0xfffffff0;genesis.nNonce++)
             {
                 proof_of_work_valid = CheckProofOfWork(genesis.GetHash(), genesis.nBits, consensus);
                 if (proof_of_work_valid) {
@@ -287,8 +287,8 @@ public:
         std::cout << "genesis.nTime: " << nTime << std::endl;
 
                                                          
-        assert(consensus.hashGenesisBlock == uint256S("notyet"));
-        assert(genesis.hashMerkleRoot == uint256S("notyet"));
+        assert(consensus.hashGenesisBlock == uint256S("000000001ee49110e6cdec7395f100946d67dacb562b07f85ef1afb5cc411aeb"));
+        assert(genesis.hashMerkleRoot == uint256S("3e06d4e945990e293b9934e317d1127998bf51351f36bb83d55cbaefbec68897"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -315,15 +315,15 @@ public:
 
         checkpointData = {
             {
-                {1,   uint256S("0000000033cb83efac961393f5ee81c4da54442fbc243f3df2f5b5d5a648b90e")},
+                {1,   uint256S("000000001ee49110e6cdec7395f100946d67dacb562b07f85ef1afb5cc411aeb")},
 
             }
         };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
-            /* nTime    */ 1531929919,
-            /* nTxCount */ 19438708,
+            /* nTime    */ 1586115773,
+            /* nTxCount */ 1,
             /* dTxRate  */ 0.626
         };
 
